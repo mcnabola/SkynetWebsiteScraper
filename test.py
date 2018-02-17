@@ -1,7 +1,7 @@
 import urllib.request, urllib.error
 
-input = open('names1.txt', 'r')
-output = open('websiteNames.txt', 'a')
+input = open('names1.txt', 'r')            # Can be changed to whatever txtfile with skynet usernames.
+output = open('websiteNames.txt', 'a')     # Can be changed to any blank txtfile or even an old one with previously checked web names.
 
 def htmlCheck(url):
     try:
