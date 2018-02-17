@@ -1,6 +1,7 @@
 import urllib.request, urllib.error
 
 f = open('names1.txt', 'r')
+output = open('websiteNames.txt', 'a')
 
 def htmlCheck(url):
     try:
@@ -34,7 +35,8 @@ while True:   # include a end conditional -- if not text: break   https://stacko
         #print(""+url)
         result = htmlCheck(url)
         if result == 'good':
-            print("Good: "  + url)
+            #print("Good: "  + url)
+            output.write("Good: "  + url +"\n")
 			
 	
 	
